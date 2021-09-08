@@ -30,6 +30,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
+        mMap.setMinZoomPreference(11.0f);
         mMap.mapType = GoogleMap.MAP_TYPE_HYBRID
         // Add a marker in Sydney and move the camera
         val rancherito1 = LatLng(6.36147, -75.49529)
